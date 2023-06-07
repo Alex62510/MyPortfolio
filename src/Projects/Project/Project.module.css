@@ -1,0 +1,34 @@
+.project {
+    width: 320px;
+
+    background-color: #5b92a6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+
+.projectImg {
+    width: 100%;
+    height: 300px;
+    background-color: #c6e78a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lookImg {
+    background-color: #7ffbff;
+    border: 1px solid;
+}
+
+.projectTitle {
+    background-color: #ba2fff;
+    margin: 5px;
+}
+
+.description {
+    background-color: #c5dfe0;
+    margin: 5px;
+}

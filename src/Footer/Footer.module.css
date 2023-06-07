@@ -1,0 +1,26 @@
+.FooterBlock {
+    height: 50vh;
+    background-color: #c4ffce;
+}
+.footerContainer {
+    flex-direction: column;
+    justify-content: space-between;
+}
+.name {
+    background-color: #9ba6a4;
+}
+.footerSocial {
+    width: 270px;
+    border: 1px solid;
+    display: flex;
+    justify-content: space-between;
+
+}
+.itemSocial {
+    background-color: #6f7172;
+    width: 60px;
+    height: 60px;
+}
+.rights {
+    background-color: #a1c9cb;
+}
