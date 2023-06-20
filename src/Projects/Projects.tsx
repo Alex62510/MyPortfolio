@@ -7,7 +7,9 @@ const Projects = () => {
     return (
         <div className={style.ProjectsBlock}>
             <div className={`${styleContainer.container} ${style.projectsContainer}`}>
-                <h2 className={style.title}>Project </h2>
+               <div>
+                   <h2 className={style.title}>Project </h2>
+               </div>
                 <div className={style.projects}>
                     <Project title={"Project_1"} description={"Customize the user flow replay experience with the latest Recorder extension API."}/>
                     <Project title={"Project_2"} description={"Explore options to customize your recorder experience"}/>

@@ -15,7 +15,7 @@
 }
 
 .contactForm {
-    width: 270px;
+    width: 280px;
     display: flex;
     flex-direction: column;
     border: 1px solid;
@@ -35,4 +35,9 @@
 .submitButton {
     padding: 10px 20px;
     background-color: #a1c9cb;
+}
+@media screen and (max-width: 360px) {
+    .contactForm {
+        width: 100%;
+    }
 }
