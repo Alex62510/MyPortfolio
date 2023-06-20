@@ -32,3 +32,7 @@
     background-color: #7f979d;
     margin: 2px;
 }
+.submitButton {
+    padding: 10px 20px;
+    background-color: #a1c9cb;
+}

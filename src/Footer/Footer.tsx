@@ -13,7 +13,7 @@ const Footer = () => {
                     <div className={style.itemSocial}></div>
                     <div className={style.itemSocial}></div>
                 </div>
-                <div className={style.rights}>2023 All rights reserved</div>
+                <span className={style.rights}>2023 All rights reserved</span>
             </div>
         </div>
     );
