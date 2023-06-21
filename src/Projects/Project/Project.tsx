@@ -11,7 +11,7 @@ const Project = (props: JobPropsType) => {
             <div className={style.projectImg}>
                 <a className={style.lookImg}>look</a>
             </div>
-            <div className={style.projectTitle}>{props.title}</div>
+            <h6 className={style.projectTitle}>{props.title}</h6>
             <span className={style.description}>{props.description}</span>
         </div>
     );

@@ -1,13 +1,18 @@
 .project {
     width: 320px;
-
-    background-color: #5b92a6;
+    background-color: #10101a;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: flex-start;
     text-align: center;
-}
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.7;
+    font-size: 15px;
+    font-weight: 300;
+    padding: 15px;
 
+}
 
 .projectImg {
     width: 100%;
@@ -24,11 +29,14 @@
 }
 
 .projectTitle {
-    background-color: #ba2fff;
+    color: #fff;
+    font-weight: 9500;
+    font-size: 20px;
     margin: 5px;
 }
 
 .description {
-    background-color: #c5dfe0;
-    margin: 5px;
+    text-align: left;
+    height: auto;
+    align-items: flex-start;
 }

@@ -1,0 +1,43 @@
+.title {
+    position: relative;
+    margin: 0 0 30px;
+}
+
+.title h2 {
+    font-family: 'Inter', sans-serif;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+    font-weight: 400;
+    font-size: 30px;
+    display: inline-block;
+    vertical-align: top;
+    text-transform: capitalize;
+    letter-spacing: 5px;
+}
+
+.title h2::before {
+    content: "";
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    right: 0;
+    width: 60px;
+    background: #2fbf71;
+    height: 1px;
+    box-sizing: border-box;
+}
+
+.title h2::after {
+    content: "";
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -8px;
+    left: 56px;
+    right: 0;
+    z-index: -1;
+    background: #2fbf71;
+    box-sizing: border-box;
+}
