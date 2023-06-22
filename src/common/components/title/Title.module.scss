@@ -1,10 +1,11 @@
+@import "../../styles/sass/variables";
 .title {
   position: relative;
   margin: 0 0 30px;
 
   & h2 {
     font-family: 'Inter', sans-serif;
-    color: #fff;
+    color:$textColor;
     position: relative;
     z-index: 1;
     font-weight: 400;
@@ -21,7 +22,7 @@
       left: 0;
       right: 0;
       width: 60px;
-      background: #2fbf71;
+      background: $primaryColor;
       height: 1px;
       box-sizing: border-box;
     }
@@ -36,7 +37,7 @@
       left: 56px;
       right: 0;
       z-index: -1;
-      background: #2fbf71;
+      background: $primaryColor;
       box-sizing: border-box;
     }
   }
