@@ -1,4 +1,5 @@
 @import "../../common/styles/sass/variables";
+
 .project {
   width: 320px;
   background-color: $bgSecondColor;
@@ -12,6 +13,7 @@
   font-size: 15px;
   font-weight: 300;
   padding: 15px;
+  border-radius: 5%;
 
   .projectImg {
     width: 100%;
