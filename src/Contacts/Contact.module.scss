@@ -1,0 +1,46 @@
+@import "../common/styles/sass/variables";
+
+.contacts {
+  height: 100vh;
+  background-color: $bgColor;
+
+  .contactsContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    .contactForm {
+      width: 280px;
+      display: flex;
+      flex-direction: column;
+      //border: 1px solid;
+      justify-content: space-between;
+      font-family: Inter, sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+      color:$textColor;
+      @media screen and (max-width: 360px) {
+        width: 100%;
+
+      }
+
+      .input {
+        background-color: $bgSecondColor;
+        margin: 2px;
+
+      }
+
+      .textarea {
+        background-color: $bgSecondColor;
+        margin: 2px;
+
+      }
+
+      .submitButton {
+        padding: 10px 20px;
+        background-color: $primaryColor;
+        color:$textColor;
+      }
+    }
+  }
+}
