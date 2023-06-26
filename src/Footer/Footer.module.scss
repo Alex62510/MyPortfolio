@@ -17,10 +17,13 @@
       align-items: flex-start;
 
       .itemSocial {
-        background-color: #6f7172;
-        width: 60px;
-        height: 60px;
 
+        background-color: $primaryColor;
+        width: 70px;
+        height: 70px;
+        background-size: contain;
+        background-position: center;
+        border-radius: 5px;
       }
     }
   }

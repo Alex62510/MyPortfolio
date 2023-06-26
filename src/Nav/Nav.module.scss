@@ -1,0 +1,11 @@
+@import "../common/styles/sass/variables";
+.nav {
+
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+    color:$textColor;
+}

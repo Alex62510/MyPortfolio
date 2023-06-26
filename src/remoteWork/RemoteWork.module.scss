@@ -3,10 +3,12 @@
 
     background-color: $bgColor;
     text-align: center;
+
     .remoteWorkContainer {
-        min-height: 60vh;
+        min-height: 70vh;
         display: flex;
         flex-direction: column;
+        justify-content: space-between;
         .button {
 
             background-color: $primaryColor;

@@ -1,13 +1,13 @@
 import React from 'react';
-import style from './Nav.module.css';
+import style from './Nav.module.scss';
 
 const Nav = () => {
     return (
         <div className={style.nav}>
-            <a href="">main</a>
-            <a href="">skills</a>
-            <a href="">projects</a>
-            <a href="">contacts</a>
+            <a >main</a>
+            <a >skills</a>
+            <a >projects</a>
+            <a >contacts</a>
         </div>
     );
 };
