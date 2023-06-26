@@ -1,0 +1,21 @@
+@import "../common/styles/sass/variables";
+.remoteWorkBlock {
+
+    background-color: $bgColor;
+    text-align: center;
+    .remoteWorkContainer {
+        min-height: 60vh;
+        display: flex;
+        flex-direction: column;
+        .button {
+
+            background-color: $primaryColor;
+            font-family: Inter, sans-serif;
+            font-size: 16px;
+            line-height: 1.7;
+            color:$textColor;
+        }
+    }
+}
+
+

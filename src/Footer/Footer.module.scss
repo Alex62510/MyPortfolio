@@ -1,0 +1,30 @@
+@import "../common/styles/sass/variables";
+
+.FooterBlock {
+  height: 50vh;
+  background-color: $bgColor;
+
+  .footerContainer {
+    flex-direction: column;
+    justify-content: space-between;
+
+
+    .footerSocial {
+     width: 100%;
+      flex-wrap: wrap;
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-start;
+
+      .itemSocial {
+        background-color: #6f7172;
+        width: 60px;
+        height: 60px;
+
+      }
+    }
+  }
+}
+
+
+
