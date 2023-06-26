@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/Alex62510/MyPortfolio/static/css/main.a70aa26e.css",
-    "main.js": "/Alex62510/MyPortfolio/static/js/main.515df90e.js",
-    "static/js/787.28cb0dcd.chunk.js": "/Alex62510/MyPortfolio/static/js/787.28cb0dcd.chunk.js",
-    "static/media/photo.png": "/Alex62510/MyPortfolio/static/media/photo.5e97c107de0d373e23f6.png",
-    "static/media/Social-network.png": "/Alex62510/MyPortfolio/static/media/Social-network.f0276ade0f159b9dd44b.png",
-    "static/media/Todo-list.png": "/Alex62510/MyPortfolio/static/media/Todo-list.8d78bf85102bbb7011d4.png",
-    "static/media/redux.png": "/Alex62510/MyPortfolio/static/media/redux.2abd200073c7ebfbcd95.png",
-    "static/media/github.svg": "/Alex62510/MyPortfolio/static/media/github.5531be85d7a8d6f333e5c7136944a022.svg",
-    "static/media/vk.svg": "/Alex62510/MyPortfolio/static/media/vk.50c14dc62d9f86c9d57ad21af03dd6e5.svg",
-    "static/media/linkedin.svg": "/Alex62510/MyPortfolio/static/media/linkedin.c12d42da54813b1b1ed991841ec59c3a.svg",
-    "static/media/telegram.svg": "/Alex62510/MyPortfolio/static/media/telegram.b758440350c3e3a1b66be65e69289ec6.svg",
-    "index.html": "/Alex62510/MyPortfolio/index.html",
-    "main.a70aa26e.css.map": "/Alex62510/MyPortfolio/static/css/main.a70aa26e.css.map",
-    "main.515df90e.js.map": "/Alex62510/MyPortfolio/static/js/main.515df90e.js.map",
-    "787.28cb0dcd.chunk.js.map": "/Alex62510/MyPortfolio/static/js/787.28cb0dcd.chunk.js.map"
+    "main.css": "/MyPortfolio/static/css/main.a70aa26e.css",
+    "main.js": "/MyPortfolio/static/js/main.35963349.js",
+    "static/js/787.28cb0dcd.chunk.js": "/MyPortfolio/static/js/787.28cb0dcd.chunk.js",
+    "static/media/photo.png": "/MyPortfolio/static/media/photo.5e97c107de0d373e23f6.png",
+    "static/media/Social-network.png": "/MyPortfolio/static/media/Social-network.f0276ade0f159b9dd44b.png",
+    "static/media/Todo-list.png": "/MyPortfolio/static/media/Todo-list.8d78bf85102bbb7011d4.png",
+    "static/media/redux.png": "/MyPortfolio/static/media/redux.2abd200073c7ebfbcd95.png",
+    "static/media/github.svg": "/MyPortfolio/static/media/github.5531be85d7a8d6f333e5c7136944a022.svg",
+    "static/media/vk.svg": "/MyPortfolio/static/media/vk.50c14dc62d9f86c9d57ad21af03dd6e5.svg",
+    "static/media/linkedin.svg": "/MyPortfolio/static/media/linkedin.c12d42da54813b1b1ed991841ec59c3a.svg",
+    "static/media/telegram.svg": "/MyPortfolio/static/media/telegram.b758440350c3e3a1b66be65e69289ec6.svg",
+    "index.html": "/MyPortfolio/index.html",
+    "main.a70aa26e.css.map": "/MyPortfolio/static/css/main.a70aa26e.css.map",
+    "main.35963349.js.map": "/MyPortfolio/static/js/main.35963349.js.map",
+    "787.28cb0dcd.chunk.js.map": "/MyPortfolio/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a70aa26e.css",
-    "static/js/main.515df90e.js"
+    "static/js/main.35963349.js"
   ]
 }
