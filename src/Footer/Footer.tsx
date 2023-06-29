@@ -2,7 +2,7 @@ import React from 'react';
 import style from './Footer.module.scss'
 import styleContainer from './../common/styles/Container.module.css'
 import Title from "../common/components/title/Title";
-import linkImg from "../assets/image/linkedin.svg";
+import linkImg from "../assets/image/linkedin2.svg";
 import gitHubImg from "../assets/image/github.svg";
 import telegramImg from "../assets/image/telegram.svg";
 import vKImg from "../assets/image/vk.svg";
