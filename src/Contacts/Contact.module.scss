@@ -1,44 +1,62 @@
 @import "../common/styles/sass/variables";
 
 .contacts {
-  min-height: 100vh;
+  min-height: 80vh;
   background-color: $bgColor;
 
   .contactsContainer {
-    min-height: 100vh;
+    min-height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+
 
     .contactForm {
       width: 280px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+      align-items: center;
       font-family: Inter, sans-serif;
       font-size: 16px;
       line-height: 1.7;
       color:$textColor;
+      padding: 0.375rem 0.75rem;
+
       @media screen and (max-width: 360px) {
         width: 100%;
 
       }
 
       .input {
-        background-color: $bgSecondColor;
-        margin: 2px;
-
+        height: calc(2em + 0.75rem + 2px);
+        font-size: 14px;
+        width: 100%;
+        background-color: $bgColor;
+        margin: 5px;
+        padding: 8px;
+        //border: 1px solid $textColor;
       }
 
       .textarea {
-        background-color: $bgSecondColor;
-        margin: 2px;
+        width: 100%;
+        margin: 5px;
+        padding: 8px;
+        background-color: $bgColor;
+        //border: 1px solid $textColor;
+        height: calc(2em + 0.75rem + 2px);
+        font-size: 14px;
 
       }
 
       .submitButton {
-        padding: 10px 20px;
+        border: 1px solid;
+        width: 120px;
+        border-radius: 5px;
         background-color: $primaryColor;
+        font-family: Inter, sans-serif;
+        font-size: 16px;
+        line-height: 1.7;
         color:$textColor;
       }
     }
