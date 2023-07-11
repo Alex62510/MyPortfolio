@@ -1,10 +1,12 @@
 @import "../common/styles/sass/variables";
+@import "../common/styles/mixins/mixins";
 .remoteWorkBlock {
 
     background-color: $bgColor;
     text-align: center;
 
     .remoteWorkContainer {
+        @include container();
         min-height: 40vh;
         display: flex;
         flex-direction: column;

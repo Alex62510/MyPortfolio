@@ -1,10 +1,12 @@
 @import "../common/styles/sass/variables";
+@import "../common/styles/mixins/mixins";
 
 .contacts {
   min-height: 80vh;
   background-color: $bgColor;
 ;
   .contactsContainer {
+    @include container();
     min-height: 80vh;
     display: flex;
     flex-direction: column;

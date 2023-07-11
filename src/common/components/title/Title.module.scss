@@ -25,6 +25,7 @@
       background: $primaryColor;
       height: 1px;
       box-sizing: border-box;
+
     }
 
     &::after {
@@ -34,15 +35,27 @@
       border-radius: 50%;
       position: absolute;
       bottom: -8px;
-      left: 56px;
+      left: 54px;
       right: 0;
       z-index: -1;
       background: $primaryColor;
       box-sizing: border-box;
+
+    }
+    &:hover {
+      text-decoration: none;
+      color:$primaryColor;
+      &::after {
+        left: 100%;
+        transition: all 0.3s ease-in-out 0s;
+      }
+      &::before{
+        width: 100%;
+        transition: all 0.3s ease-in-out 0s;
+      }
     }
   }
 }
-
 
 
 

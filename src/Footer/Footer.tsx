@@ -22,7 +22,7 @@ const Footer = () => {
     };
     return (
         <div className={style.FooterBlock}>
-            <div className={`${styleContainer.container} ${style.footerContainer}`}>
+            <div className={style.footerContainer}>
                 <Title title={"Let's Work Together!"}/>
                 <div className={style.footerSocial}>
                     <div className={style.itemSocial} style={LinkIn}></div>

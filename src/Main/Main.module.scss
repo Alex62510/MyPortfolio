@@ -1,22 +1,21 @@
 @import "../common/styles/sass/variables";
+@import "../common/styles/mixins/mixins";
+
 .mainBlock {
   height: 100vh;
   background-color: $bgColor;
 
-
   .mainContainer {
+    @include container();
     display: flex;
-
     justify-content: space-between;
     @media screen and (max-width: 752px) {
       justify-content: center;
     }
 
     .text {
-
       width: 300px;
       background-color: $bgColor;
-
     }
 
     .photo {
