@@ -20,6 +20,8 @@ const Footer = () => {
     const vK={
         backgroundImage: `url(${vKImg})`,
     };
+
+
     return (
         <div className={style.FooterBlock}>
             <div className={`${styleContainer.container} ${style.footerContainer}`}>
