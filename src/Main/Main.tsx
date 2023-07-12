@@ -11,7 +11,9 @@ const Main = () => {
             <div className={style.mainContainer}>
                 <div className={style.text}>
                     <span>Hi everybody</span>
-                    <h1>I am Alex Orlov</h1>
+                    <h1 >
+                        <span>I am </span><span className={style.name}>Alex Orlov</span>
+                    </h1>
                     <p> Front-end Developer</p>
                 </div>
                 <div className={style.photo} style={myPhoto}></div>

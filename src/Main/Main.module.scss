@@ -16,6 +16,11 @@
     .text {
       width: 300px;
       background-color: $bgColor;
+      .name {
+        &:hover{
+          color:$primaryColor;
+        }
+      }
     }
 
     .photo {

@@ -1,6 +1,6 @@
 @import "../common/styles/sass/variables";
+@import "../common/styles/mixins/mixins";
 .nav {
-
     width: 300px;
     display: flex;
     justify-content: space-around;
@@ -8,4 +8,21 @@
     font-size: 16px;
     line-height: 1.7;
     color:$textColor;
+
+    .main  {
+        position: relative;
+        outline: none;
+        z-index: 0;
+       @include psevdo();
+    }
+    .skills  {
+        @extend .main
+    }
+    .project  {
+        @extend .main
+    }
+    .contacts  {
+        @extend .main
+    }
+
 }
