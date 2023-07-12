@@ -1,13 +1,12 @@
 import React from 'react';
+import Particle from '../common/components/particle/Particle';
 import style from './Main.module.scss'
-import photo from './../assets/image/photo.png'
 
 const Main = () => {
-  const myPhoto={
-       backgroundImage: `url(${photo})`,
-   }
+
     return (
         <div className={style.mainBlock}>
+            <Particle />
             <div className={style.mainContainer}>
                 <div className={style.text}>
                     <span>Hi everybody</span>
@@ -16,7 +15,9 @@ const Main = () => {
                     </h1>
                     <p> Front-end Developer</p>
                 </div>
-                <div className={style.photo} style={myPhoto}></div>
+                <div className={style.image}>
+                    <div className={style.photo} ></div>
+                </div>
             </div>
         </div>
     );
