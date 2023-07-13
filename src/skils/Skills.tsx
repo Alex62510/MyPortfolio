@@ -1,6 +1,6 @@
 import React from 'react';
 import style from './Skills.module.scss';
-import styleContainer from './../common/styles/Container.module.css'
+import {Bounce, Fade, Flip, Rotate, Zoom} from "react-awesome-reveal";
 import Skill from "./skill/Skill";
 import Title from "../common/components/title/Title";
 import reactImg from "../assets/image/react.png";
@@ -9,16 +9,16 @@ import cssImg from "../assets/image/css.png";
 import storyBookImg from "../assets/image/storybook.png";
 
 const Skills = () => {
-    const reactImage={
+    const reactImage = {
         backgroundImage: `url(${reactImg})`
     };
-    const reduxImage={
+    const reduxImage = {
         backgroundImage: `url(${reduxImg})`
     };
-    const cssImage={
+    const cssImage = {
         backgroundImage: `url(${cssImg})`
     };
-    const storyBookImage={
+    const storyBookImage = {
         backgroundImage: `url(${storyBookImg})`
     };
 
@@ -27,10 +27,16 @@ const Skills = () => {
             <div className={style.skillsContainer}>
                 <Title title="Skills"/>
                 <div className={style.skills}>
-                    <Skill style={reactImage} title={"REACT"} descriiption={"70%"}/>
-                    <Skill style={reduxImage} title={"REDUX"} descriiption={"50%"}/>
-                    <Skill style={cssImage} title={"CSS"} descriiption={"30%"}/>
-                    <Skill style={storyBookImage} title={"Story book"} descriiption={"20%"}/>
+                    <Fade direction={"left"}>
+                        <Skill style={reactImage} title={"REACT"} descriiption={"70%"}/>
+                    </Fade>
+                    <Fade direction={"up"}>
+                        <Skill style={reduxImage} title={"REDUX"} descriiption={"50%"}/>
+                        <Skill style={cssImage} title={"CSS"} descriiption={"30%"}/>
+                    </Fade>
+                    <Fade direction={"right"}>
+                        <Skill style={storyBookImage} title={"Story book"} descriiption={"20%"}/>
+                    </Fade>
                 </div>
             </div>
         </div>

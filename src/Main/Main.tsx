@@ -1,24 +1,37 @@
 import React from 'react';
-import Particle from '../common/components/particle/Particle';
 import style from './Main.module.scss'
+import {Fade, Rotate} from "react-awesome-reveal";
+
 
 const Main = () => {
 
     return (
         <div className={style.mainBlock}>
-            <Particle />
+
             <div className={style.mainContainer}>
                 <div className={style.text}>
-                    <span>Hi everybody</span>
-                    <h1 >
-                        <span>I am </span><span className={style.name}>Alex Orlov</span>
-                    </h1>
-                    <p> Front-end Developer</p>
+                    <Rotate direction={"bottom-left"} cascade>
+                        <span>Hi everybody</span>
+                    </Rotate>
+                    <Rotate direction={"bottom-right"} cascade>
+                        <h1>
+                            <span>I am </span><span className={style.name}>Alex Orlov</span>
+                        </h1>
+                    </Rotate>
+                    <Rotate direction={"bottom-left"} cascade>
+                        <p> Front-end Developer</p>
+                    </Rotate>
+
                 </div>
-                <div className={style.image}>
-                    <div className={style.photo} ></div>
-                </div>
+                <Fade direction={"right"}>
+                    <div className={style.image}>
+                        <div className={style.photo}></div>
+                    </div>
+                </Fade>
+
             </div>
+
+
         </div>
     );
 };

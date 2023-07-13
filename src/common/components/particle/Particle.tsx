@@ -17,6 +17,7 @@ const Particle = () => {
     }, []);
     return (
       <Particles
+          style={{position:"absolute",zIndex:"-1"}}
           id="tsparticles"
           init={particlesInit}
           loaded={particlesLoaded}
@@ -24,7 +25,7 @@ const Particle = () => {
               name: "Plasma",
               background: {
                   color: {
-                      value: "#000000",
+                      value: "##1e1e1e",
                   },
               },
               particles: {

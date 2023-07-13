@@ -7,10 +7,13 @@ import RemoteWork from "./remoteWork/RemoteWork";
 import Contact from "./Contacts/Contact";
 import Projects from "./Projects/Projects";
 import Footer from "./Footer/Footer";
+import Particle from "./common/components/particle/Particle";
 
 function App() {
     return (
         <div className="App">
+
+            <Particle />
             <Header/>
             <Main/>
             <Skills/>
