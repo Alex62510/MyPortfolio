@@ -1,6 +1,6 @@
 import React from 'react';
 import style from './Title.module.scss'
-import {Fade, Flip, Rotate, Zoom} from "react-awesome-reveal";
+import {Bounce, Fade, Flip, Rotate, Zoom} from "react-awesome-reveal";
 
 export type TitlePropsType={
     title:string
@@ -8,9 +8,9 @@ export type TitlePropsType={
 const Title = (props:TitlePropsType) => {
     return (
         <div className={style.title}>
-            <Zoom  >
+            <Bounce  >
                 <h2>{props.title} </h2>
-            </Zoom>
+            </Bounce>
 
         </div>
     );
