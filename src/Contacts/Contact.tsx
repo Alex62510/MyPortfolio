@@ -11,15 +11,15 @@ const Contact = () => {
                 <Title title="Contact Me"/>
                 <Zoom>
                 <form className={style.contactForm}>
-                    <Rotate direction={"top-left"}>
+                    <Fade >
                         <input className={style.input} placeholder={"Type your name*"}/>
-                    </Rotate>
-                    <Rotate direction={"bottom-right"}>
+                    </Fade>
+                    <Fade >
                     <input className={style.input} placeholder={"Type your email*"}/>
-                    </Rotate>
-                    <Rotate direction={"bottom-left"}>
+                    </Fade>
+                    <Fade >
                     <textarea className={style.textarea} placeholder={"Type your massage*"}></textarea>
-                    </Rotate >
+                    </Fade >
                     <Slide direction={"up"}>
                         <Button buttonName={"Send message"} typeButton={"submit"}/>
                     </Slide>

@@ -56,7 +56,7 @@ const Particle = () => {
                   },
                   move: {
                       enable: true,
-                      speed: 5,
+                      speed: 3,
                       outModes: "bounce",
                   },
               },
