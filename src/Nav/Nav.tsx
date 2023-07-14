@@ -1,20 +1,20 @@
 import React from 'react';
 import style from './Nav.module.scss';
-import {Link, animateScroll as scroll} from "react-scroll";
+import {Link} from "react-scroll";
 
 const Nav = () => {
     return (
         <div className={style.nav}>
             <Link to="main"
-                  className={style.main}
+                  // className={style.main}
                   activeClass={style.active}
                   spy={true}
                   smooth={true}
                   duration={500}
-                  offset={1}
+                  offset={-90}
             >main</Link>
             <Link to="skills"
-                  className={style.skills}
+                  // className={style.skills}
                   activeClass={style.active}
                   spy={true}
                   smooth={true}
@@ -27,15 +27,15 @@ const Nav = () => {
                   smooth={true}
                   duration={500}
                   offset={1}
-                  className={style.project}
+                  // className={style.project}
             >projects</Link>
             <Link to="contacts"
-                  className={style.contacts}
+                  // className={style.contacts}
                   activeClass={style.active}
                   spy={true}
                   smooth={true}
                   duration={500}
-                  offset={1}
+                  offset={60}
             >contacts</Link>
         </div>
     );

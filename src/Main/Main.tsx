@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import style from './Main.module.scss'
 import {Fade} from "react-awesome-reveal";
 import ReactTypingEffect from "react-typing-effect";
@@ -6,14 +6,18 @@ import Tilt from 'react-parallax-tilt';
 
 
 const Main = () => {
-
+const [mouseOn,setMouseOn]=useState<boolean>(false)
+    const mouseOver=()=>{setMouseOn(true)}
+    const mouseLeave=()=>{setMouseOn(false)}
     return (
         <div id="main" className={style.mainBlock}>
 
             <div className={style.mainContainer}>
                 <div className={style.text}>
                     <Fade direction={"left"}>
-                        <ReactTypingEffect text="Hi everybody"/>
+                        <div onMouseOver={mouseOver} onMouseLeave={mouseLeave}>
+                            {!mouseOn? <ReactTypingEffect text="Hi everybody"/>:<div>Hi everybody</div>}
+                        </div>
                     </Fade>
                     <Fade direction={"bottom-right"} cascade>
                         <h1>
@@ -28,11 +32,11 @@ const Main = () => {
                     <div className={style.image}>
                         <Tilt
                             tiltMaxAngleX={35}
-                              tiltMaxAngleY={35}
-                              perspective={900}
-                              scale={1.1}
-                              transitionSpeed={2000}
-                              gyroscope={true}
+                            tiltMaxAngleY={35}
+                            perspective={900}
+                            scale={1.1}
+                            transitionSpeed={2000}
+                            gyroscope={true}
 
                         >
                             <div className={style.photo}></div>

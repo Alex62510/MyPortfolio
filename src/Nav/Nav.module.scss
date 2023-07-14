@@ -10,8 +10,20 @@
   line-height: 1.7;
   color: $textColor;
 
+  a {
+    cursor: pointer;
+
+    &:hover {
+      text-decoration: none;
+      color: #2fbf71;
+
+
+    }
+  }
+
   .active {
     color: #2fbf71;
+
   }
 
   .main {
