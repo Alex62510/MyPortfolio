@@ -4,7 +4,7 @@ import Project from './Project/Project';
 import Title from '../common/components/title/Title';
 import todoImg from './../assets/image/Todo-list.png'
 import SocialNetImg from '../assets/image/Social-network.png'
-import {Bounce, Fade, Flip, Roll, Slide, Zoom} from "react-awesome-reveal";
+import {Zoom} from "react-awesome-reveal";
 
 const Projects = () => {
     const todos = {
@@ -14,18 +14,18 @@ const Projects = () => {
         backgroundImage: `url(${SocialNetImg})`,
     }
     return (
-        <div className={style.ProjectsBlock}>
+        <div id="projects" className={style.ProjectsBlock}>
             <div className={style.projectsContainer}>
                 <Title title="Projects"/>
                 <div className={style.projects}>
                     <Zoom>`
-                    <Project title={"Social network"} style={social}
-                             description={"Customize the user flow replay experience with the latest Recorder extension API."}/>
+                        <Project title={"Social network"} style={social}
+                                 description={"Customize the user flow replay experience with the latest Recorder extension API."}/>
                     </Zoom>
-                        <Zoom >
-                    <Project title={"Todo list"} style={todos}
-                             description={"Explore options to customize your recorder experience"}/>
-                            </Zoom>
+                    <Zoom>
+                        <Project title={"Todo list"} style={todos}
+                                 description={"Explore options to customize your recorder experience"}/>
+                    </Zoom>
                 </div>
             </div>
         </div>

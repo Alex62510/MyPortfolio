@@ -22,7 +22,7 @@ const Footer = () => {
         backgroundImage: `url(${vKImg})`,
     };
     return (
-        <div className={style.FooterBlock}>
+        <div id="footer" className={style.FooterBlock}>
             <div className={style.footerContainer}>
                 <Title title={"Let's Work Together!"}/>
 

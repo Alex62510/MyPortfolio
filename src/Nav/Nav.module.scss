@@ -1,28 +1,36 @@
 @import "../common/styles/sass/variables";
 @import "../common/styles/mixins/mixins";
-.nav {
-    width: 300px;
-    display: flex;
-    justify-content: space-around;
-    font-family: Inter, sans-serif;
-    font-size: 16px;
-    line-height: 1.7;
-    color:$textColor;
 
-    .main  {
-        position: relative;
-        outline: none;
-        z-index: 0;
-       @include psevdo();
-    }
-    .skills  {
-        @extend .main
-    }
-    .project  {
-        @extend .main
-    }
-    .contacts  {
-        @extend .main
-    }
+.nav {
+  width: 300px;
+  display: flex;
+  justify-content: space-around;
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+  color: $textColor;
+
+  .active {
+    color: #2fbf71;
+  }
+
+  .main {
+    position: relative;
+    outline: none;
+    z-index: 0;
+    @include psevdo();
+  }
+
+  .skills {
+    @extend .main
+  }
+
+  .project {
+    @extend .main
+  }
+
+  .contacts {
+    @extend .main
+  }
 
 }

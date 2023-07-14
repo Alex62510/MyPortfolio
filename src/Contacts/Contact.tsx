@@ -6,7 +6,7 @@ import {Fade, Flip, Rotate, Slide, Zoom} from "react-awesome-reveal";
 
 const Contact = () => {
     return (
-        <div className={style.contacts}>
+        <div id="contacts" className={style.contacts}>
             <div className={style.contactsContainer}>
                 <Title title="Contact Me"/>
                 <Zoom>
