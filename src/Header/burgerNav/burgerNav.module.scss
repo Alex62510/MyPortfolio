@@ -1,0 +1,70 @@
+@import "../../common/styles/sass/variables";
+@import "../../common/styles/mixins/mixins";
+
+.burgerNav {
+  background-color: aqua;
+display: flex;
+  flex-direction: column;
+justify-content: flex-start;
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+  color: $textColor;
+  position: relative;
+  //flex-wrap: wrap;
+  .burgerNavItems {
+    display: flex;
+    min-width: 300px;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    a {
+      cursor: pointer;
+
+      &:hover {
+        text-decoration: none;
+        color: #2fbf71;
+      }
+
+    }
+    .active {
+      color: #2fbf71;
+
+    }
+  }
+  .burgerBtn{
+    width: 30px;
+    height: 30px;
+    background-color: brown;
+    position: absolute;
+    top:10px;
+    right: 0;
+  }
+  @media screen and (min-width: 401px) {
+    display: none;
+
+  }
+}
+
+
+//  .main {
+//    position: relative;
+//    outline: none;
+//    z-index: 0;
+//    @include psevdo();
+//  }
+//
+//  .skills {
+//    @extend .main
+//  }
+//
+//  .project {
+//    @extend .main
+//  }
+//
+//  .contacts {
+//    @extend .main
+//  }
+//
+//}
