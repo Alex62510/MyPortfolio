@@ -6,6 +6,7 @@
   background-color: $bgColor;
 
   .mainContainer {
+    padding-top: 100px;
     @include container();
     display: flex;
     justify-content: space-between;

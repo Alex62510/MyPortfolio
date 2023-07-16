@@ -2,13 +2,14 @@
 @import "../common/styles/mixins/mixins";
 
 .FooterBlock {
-  height: 50vh;
+  height: 70vh;
   background-color: $bgColor;
 
   .footerContainer {
     @include container();
     flex-direction: column;
     justify-content: space-between;
+
 
 
     .footerSocial {

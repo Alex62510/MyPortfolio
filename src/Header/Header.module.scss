@@ -3,9 +3,16 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    min-height: 80px;
-
+    height: 80px;
+width: 100%;
     background-color: $bgSecondColor;
+   flex-wrap: nowrap;
+    z-index: 9999;
+    left: 0;
+    right: 0;
+    position: fixed;
+    padding: 0 30px;
+    opacity: 0.8;
     //@media screen and (max-width: 401px) {
     //    justify-content: flex-start;
     //}
