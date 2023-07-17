@@ -49,11 +49,14 @@
   .burgerBtn {
     width: 30px;
     height: 30px;
-    background-color: brown;
+//border-radius: 50%;
     position: absolute;
     top: 24px;
     right: 20px;
-
+    background-color: $textColor;
+    background-image:url("../../assets/image/burger.png");
+    background-size: cover;
+    background-position: center;
   }
 
   @media screen and (min-width: 401px) {

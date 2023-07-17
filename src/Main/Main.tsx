@@ -34,7 +34,7 @@ const [mouseOn,setMouseOn]=useState<boolean>(false)
                             tiltMaxAngleX={35}
                             tiltMaxAngleY={35}
                             perspective={900}
-                            scale={1.1}
+                            scale={1.05}
                             transitionSpeed={2000}
                             gyroscope={true}
 

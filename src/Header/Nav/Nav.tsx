@@ -35,7 +35,7 @@ const Nav = () => {
                   spy={true}
                   smooth={true}
                   duration={500}
-                  offset={-5}
+                  offset={-20}
             >contacts</Link>
         </div>
     );

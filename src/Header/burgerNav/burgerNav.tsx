@@ -23,21 +23,21 @@ const BurgerNav = () => {
                       spy={true}
                       smooth={true}
                       duration={500}
-                      offset={1}
+                      offset={-120}
                 >skills</Link>
                 <Link to={"projects"}
                       activeClass={style.active}
                       spy={true}
                       smooth={true}
                       duration={500}
-                      offset={1}
+                      offset={-120}
                 >projects</Link>
                 <Link to="contacts"
                       activeClass={style.active}
                       spy={true}
                       smooth={true}
                       duration={500}
-                      offset={60}
+                      offset={-80}
                 >contacts</Link>
             </div>
             <div className={style.burgerBtn} onClick={bMenuOnClick}></div>
