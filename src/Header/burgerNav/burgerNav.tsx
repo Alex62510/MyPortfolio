@@ -11,7 +11,7 @@ const BurgerNav = () => {
                       spy={true}
                       smooth={true}
                       duration={500}
-                      offset={-90}
+                      offset={0}
                 >main</Link>
                 <Link to="skills"
                       activeClass={style.active}
