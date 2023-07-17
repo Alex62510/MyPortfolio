@@ -10,22 +10,21 @@
   font-family: Inter, sans-serif;
   font-size: 16px;
   line-height: 1.7;
-  //color: $textColor;
-  position: relative;
-  background-color: aqua;
 
   .burgerNavItems {
-    //display: flex;
-
 
     position: absolute;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     right: 0;
-    top: 50px;
-display: none;
-
+    left:0;
+    top: 0px;
+    display: flex;
+    height: 0px;
+    justify-content: flex-start;
+    transform: translate(0,-120px);
+    flex-wrap: nowrap;
+    transition: 0.8s;
     a {
       cursor: pointer;
 
@@ -33,13 +32,18 @@ display: none;
         text-decoration: none;
         color: #2fbf71;
       }
-
     }
 
     .active {
       color: #2fbf71;
-
     }
+  }
+
+  .show {
+    transform: translate(0,0);
+    padding: 5px;
+    height: 120px;
+    background-color:$bgSecondColor ;
   }
 
   .burgerBtn {
@@ -48,34 +52,14 @@ display: none;
     background-color: brown;
     position: absolute;
     top: 24px;
-    right: 0;
+    right: 20px;
 
   }
 
   @media screen and (min-width: 401px) {
     display: none;
-
   }
 }
 
 
-//  .main {
-//    position: relative;
-//    outline: none;
-//    z-index: 0;
-//    @include psevdo();
-//  }
-//
-//  .skills {
-//    @extend .main
-//  }
-//
-//  .project {
-//    @extend .main
-//  }
-//
-//  .contacts {
-//    @extend .main
-//  }
-//
-//}
+

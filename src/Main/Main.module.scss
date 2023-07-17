@@ -2,7 +2,7 @@
 @import "../common/styles/mixins/mixins";
 
 .mainBlock {
-  height: 100vh;
+  min-height: 100vh;
   background-color: $bgColor;
 
   .mainContainer {
@@ -17,7 +17,8 @@
     .text {
       width: 300px;
       background-color: $bgColor;
-
+      padding-bottom: 20px;
+      padding-top: 30px;
       .name {
         &:hover {
           color: $primaryColor;
@@ -27,6 +28,7 @@
 
     .image {
       position: relative;
+
       z-index: 1;
       &::before {
         content: "";
