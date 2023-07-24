@@ -12,7 +12,7 @@ const Nav = () => {
                   smooth={true}
                   duration={500}
                   offset={0}
-            >main</Link>
+            >Main</Link>
             <Link to="skills"
                   // className={style.skills}
                   activeClass={style.active}
@@ -20,7 +20,7 @@ const Nav = () => {
                   smooth={true}
                   duration={500}
                   offset={-80}
-            >skills</Link>
+            >Skills</Link>
             <Link to={"projects"}
                   activeClass={style.active}
                   spy={true}
@@ -28,7 +28,7 @@ const Nav = () => {
                   duration={500}
                   offset={-80}
                   // className={style.project}
-            >projects</Link>
+            >Projects</Link>
             <Link to="contacts"
                   // className={style.contacts}
                   activeClass={style.active}
@@ -36,7 +36,7 @@ const Nav = () => {
                   smooth={true}
                   duration={500}
                   offset={-20}
-            >contacts</Link>
+            >Contacts</Link>
         </div>
     );
 };

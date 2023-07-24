@@ -31,8 +31,8 @@ const [mouseOn,setMouseOn]=useState<boolean>(false)
                 <Fade direction={"right"}>
                     <div className={style.image}>
                         <Tilt
-                            tiltMaxAngleX={35}
-                            tiltMaxAngleY={35}
+                            tiltMaxAngleX={5}
+                            tiltMaxAngleY={5}
                             perspective={900}
                             scale={1.05}
                             transitionSpeed={2000}
