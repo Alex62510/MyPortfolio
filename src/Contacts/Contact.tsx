@@ -3,23 +3,28 @@ import style from './Contact.module.scss';
 import Title from "../common/components/title/Title";
 import {Button} from "../common/components/button/Button";
 import {Fade, Slide, Zoom} from "react-awesome-reveal";
-import {Form, useFormik} from "formik";
+import {useFormik} from "formik";
+import axios from "axios";
 
 type ContactType = {
     name: string,
-    email: string,
-    text: string,
+    contactEmail: string,
+    message: string,
 }
 const Contact = () => {
     const formik = useFormik({
         initialValues: {
             name: "",
-            email: "",
-            text: ""
+            contactEmail: "",
+            message: ""
         },
         onSubmit: values => {
             alert(JSON.stringify(values));
             formik.resetForm()
+            axios.post("http://localhost:3010/sendMessage",values)
+                .then(()=>{
+                    alert("Your message has been send")
+                })
         },
     })
     return (
@@ -41,18 +46,18 @@ const Contact = () => {
                             <input
                                 className={style.input}
                                 placeholder={"Type your email*"}
-                                name="email"
+                                name="contactEmail"
                                 onChange={formik.handleChange}
-                                value={formik.values.email}
+                                value={formik.values.contactEmail}
                             />
                         </Fade>
                         <Fade>
                             <textarea
                                 className={style.textarea}
                                 placeholder={"Type your massage*"}
-                                name="text"
+                                name="message"
                                 onChange={formik.handleChange}
-                                value={formik.values.text}
+                                value={formik.values.message}
                             />
                         </Fade>
                         <Slide direction={"up"}>
