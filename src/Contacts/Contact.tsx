@@ -21,7 +21,9 @@ const Contact = () => {
         onSubmit: values => {
             alert(JSON.stringify(values));
             formik.resetForm()
-            axios.post("http://localhost:3010/sendMessage",values)
+            axios.post("http://gmail-smtp-5rb35a72i-alex62510.vercel.app/sendMessage",values,{headers: {
+                    'Content-Type': 'application/json'
+                }})
                 .then(()=>{
                     alert("Your message has been send")
                 })
