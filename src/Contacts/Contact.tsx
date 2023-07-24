@@ -21,7 +21,7 @@ const Contact = () => {
         onSubmit: values => {
             alert(JSON.stringify(values));
             formik.resetForm()
-            axios.post("http://gmail-smtp-5rb35a72i-alex62510.vercel.app/sendMessage",values,{headers: {
+            axios.post("https://gmail-smtp-git-main-alex62510.vercel.app/sendMessage",values,{headers: {
                     'Content-Type': 'application/json'
                 }})
                 .then(()=>{
