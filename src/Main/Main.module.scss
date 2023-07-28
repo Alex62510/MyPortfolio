@@ -19,7 +19,9 @@
     .text {
       width: 300px;
       background-color: $bgColor;
-
+      @media screen and (max-width: 767px) {
+        margin: 25px;
+      }
       .name {
         &:hover {
           color: $primaryColor;

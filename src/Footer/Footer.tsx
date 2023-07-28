@@ -6,7 +6,7 @@ import gitHubImg from "../assets/image/github.svg";
 import telegramImg from "../assets/image/telegram.svg";
 import vKImg from "../assets/image/vk.svg";
 import {Bounce, Flip} from "react-awesome-reveal";
-import {ItemSosial} from "./itemSosial/itemSosial";
+import {ItemSocial} from "./itemSosial/itemSosial";
 
 const Footer = () => {
     const LinkIn = {
@@ -22,14 +22,14 @@ const Footer = () => {
         backgroundImage: `url(${vKImg})`,
     };
 
-    const itemSosial = [LinkIn, gitHub, Telegram, vK]
+    const itemSocial = [LinkIn, gitHub, Telegram, vK]
     return (
         <div id="footer" className={style.FooterBlock}>
             <div className={style.footerContainer}>
                 <Title title={"Let's Work Together!"}/>
                 <div className={style.footerSocial}>
                     <Flip>
-                        {itemSosial.map((t, index) => <ItemSosial item={t} key={index}/>)}
+                        {itemSocial.map((t, index) => <ItemSocial item={t} key={index}/>)}
                     </Flip>
                 </div>
                 <Bounce>
