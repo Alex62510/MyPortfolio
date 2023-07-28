@@ -42,18 +42,18 @@
       box-sizing: border-box;
 
     }
-    &:hover {
-      text-decoration: none;
-      color:$primaryColor;
-      &::after {
-        left: 100%;
-        transition: all 0.3s ease-in-out 0s;
-      }
-      &::before{
-        width: 100%;
-        transition: all 0.3s ease-in-out 0s;
-      }
-    }
+    //&:hover {
+    //  text-decoration: none;
+    //  color:$primaryColor;
+    //  &::after {
+    //    left: 100%;
+    //    transition: all 0.3s ease-in-out 0s;
+    //  }
+    //  &::before{
+    //    width: 100%;
+    //    transition: all 0.3s ease-in-out 0s;
+    //  }
+    //}
   }
 }
 

@@ -4,6 +4,8 @@
 .mainBlock {
   min-height: 100vh;
   background-color: $bgColor;
+  display: flex;
+  align-items: center;
 
   .mainContainer {
     padding-top: 100px;
@@ -17,8 +19,7 @@
     .text {
       width: 300px;
       background-color: $bgColor;
-      padding-bottom: 20px;
-      padding-top: 20px;
+
       .name {
         &:hover {
           color: $primaryColor;
@@ -30,6 +31,7 @@
       position: relative;
 
       z-index: 1;
+
       &::before {
         content: "";
         position: absolute;
@@ -53,6 +55,7 @@
 
       &:hover {
         text-decoration: none;
+
         &::before {
           height: 100%;
           width: 100%;
@@ -62,6 +65,7 @@
         }
 
       }
+
       .photo {
 
         width: 300px;

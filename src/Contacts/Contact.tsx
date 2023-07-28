@@ -55,6 +55,7 @@ const Contact = () => {
                         </Fade>
                         <Fade>
                             <textarea
+
                                 className={style.textarea}
                                 placeholder={"Type your massage*"}
                                 name="message"
