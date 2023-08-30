@@ -19,11 +19,11 @@ const Projects = () => {
                 <Title title="Projects"/>
                 <div className={style.projects}>
                     <Zoom>`
-                        <Project title={"Social network"} style={social}
+                        <Project link={"https://github.com/Alex62510/samurai-way-main"} title={"Social network"} style={social}
                                  description={"Customize the user flow replay experience with the latest Recorder extension API."}/>
                     </Zoom>
                     <Zoom>
-                        <Project title={"Todo list"} style={todos}
+                        <Project  link={"https://github.com/Alex62510/samurai-way-main"} title={"Todo list"} style={todos}
                                  description={"Explore options to customize your recorder experience"}/>
                     </Zoom>
                 </div>

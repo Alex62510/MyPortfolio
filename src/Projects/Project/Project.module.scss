@@ -56,6 +56,9 @@
       @extend .button;
       position: relative;
       z-index: 1;
+     .link {
+       color: $textColor;
+     }
     }
   }
   .projectTitle {
