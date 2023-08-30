@@ -1,12 +1,14 @@
 import React from 'react';
 import style from './Skills.module.scss';
-import {Bounce, Fade, Flip, Rotate, Zoom} from "react-awesome-reveal";
+import {Fade} from "react-awesome-reveal";
 import Skill from "./skill/Skill";
 import Title from "../common/components/title/Title";
 import reactImg from "../assets/image/react.png";
 import reduxImg from "../assets/image/redux.png";
 import cssImg from "../assets/image/css.png";
 import storyBookImg from "../assets/image/storybook.png";
+import gitImg from "../assets/image/git.png";
+import restApiImg from "../assets/image/restApi.png";
 
 const Skills = () => {
     const reactImage = {
@@ -15,8 +17,14 @@ const Skills = () => {
     const reduxImage = {
         backgroundImage: `url(${reduxImg})`
     };
+    const gitImage = {
+        backgroundImage: `url(${gitImg})`
+    };
     const cssImage = {
         backgroundImage: `url(${cssImg})`
+    };
+    const restApiImage = {
+        backgroundImage: `url(${restApiImg})`
     };
     const storyBookImage = {
         backgroundImage: `url(${storyBookImg})`
@@ -27,15 +35,23 @@ const Skills = () => {
             <div className={style.skillsContainer}>
                 <Title title="Skills"/>
                 <div className={style.skills}>
-                    <Fade direction={"left"}>
-                        <Skill style={reactImage} title={"REACT"} descriiption={"70%"}/>
+                    <Fade direction={"up"}>
+                        <Skill style={reactImage} title={"REACT"} descriiption={"90%"}/>
                     </Fade>
                     <Fade direction={"up"}>
-                        <Skill style={reduxImage} title={"REDUX"} descriiption={"50%"}/>
-                        <Skill style={cssImage} title={"CSS"} descriiption={"30%"}/>
+                        <Skill style={reduxImage} title={"REDUX"} descriiption={"80%"}/>
                     </Fade>
-                    <Fade direction={"right"}>
-                        <Skill style={storyBookImage} title={"Story book"} descriiption={"20%"}/>
+                    <Fade direction={"up"}>
+                        <Skill style={cssImage} title={"CSS"} descriiption={"60%"}/>
+                    </Fade>
+                    <Fade direction={"up"}>
+                        <Skill style={gitImage} title={"GIT"} descriiption={"50%"}/>
+                    </Fade>
+                    <Fade direction={"up"}>
+                        <Skill style={restApiImage} title={"REST API"} descriiption={"70%"}/>
+                    </Fade>
+                    <Fade direction={"up"}>
+                        <Skill style={storyBookImage} title={"Story book"} descriiption={"60%"}/>
                     </Fade>
                 </div>
             </div>
