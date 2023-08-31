@@ -1,10 +1,16 @@
 import style from "../Footer.module.scss";
 import React, {FC} from "react";
-type Props={
-    item: { backgroundImage:string}
+
+type Props = {
+    item: { backgroundImage: string }
+    link: string
 }
-export const ItemSocial:FC<Props>=({item})=>{
+export const ItemSocial: FC<Props> = ({item, link}) => {
     return (
-        <div className={style.itemSocial} style={item}></div>
+        <div>
+            <a href={link}>
+                <div className={style.itemSocial} style={item}></div>
+            </a>
+        </div>
     )
 }
