@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/MyPortfolio/static/css/main.8a5f9a98.css",
+    "main.css": "/MyPortfolio/static/css/main.4b8d2fdc.css",
     "main.js": "/MyPortfolio/static/js/main.d296fd55.js",
     "static/js/787.28cb0dcd.chunk.js": "/MyPortfolio/static/js/787.28cb0dcd.chunk.js",
     "static/media/FleshCardImg.png": "/MyPortfolio/static/media/FleshCardImg.14ab33b3107da8456000.png",
-    "static/media/ava21.JPG": "/MyPortfolio/static/media/ava21.8e791555857bc3dc3270.JPG",
+    "static/media/ava21.JPG": "/MyPortfolio/static/media/ava21.5f19dd6f6f167cae1129.JPG",
     "static/media/git.png": "/MyPortfolio/static/media/git.a9e0753509a2955e6bef.png",
     "static/media/Social-network.png": "/MyPortfolio/static/media/Social-network.f0276ade0f159b9dd44b.png",
     "static/media/Todo-list.png": "/MyPortfolio/static/media/Todo-list.8d78bf85102bbb7011d4.png",
@@ -14,12 +14,12 @@
     "static/media/telegram.svg": "/MyPortfolio/static/media/telegram.b758440350c3e3a1b66be65e69289ec6.svg",
     "index.html": "/MyPortfolio/index.html",
     "static/media/linkedin2.svg": "/MyPortfolio/static/media/linkedin2.beeba3c6738169922ca0e08204dbf58f.svg",
-    "main.8a5f9a98.css.map": "/MyPortfolio/static/css/main.8a5f9a98.css.map",
+    "main.4b8d2fdc.css.map": "/MyPortfolio/static/css/main.4b8d2fdc.css.map",
     "main.d296fd55.js.map": "/MyPortfolio/static/js/main.d296fd55.js.map",
     "787.28cb0dcd.chunk.js.map": "/MyPortfolio/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8a5f9a98.css",
+    "static/css/main.4b8d2fdc.css",
     "static/js/main.d296fd55.js"
   ]
 }
