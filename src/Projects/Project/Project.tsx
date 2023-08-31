@@ -1,6 +1,5 @@
 import React from 'react';
 import style from './Project.module.scss';
-import { Link } from "react-router-dom"
 
 type JobPropsType = {
     title: string
