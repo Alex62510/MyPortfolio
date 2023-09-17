@@ -1,7 +1,5 @@
 import React from 'react';
 import style from './Skill.module.scss';
-import {Simulate} from "react-dom/test-utils";
-import progress = Simulate.progress;
 
 type SkillPropsType ={
     title:string
