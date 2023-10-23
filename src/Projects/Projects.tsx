@@ -5,6 +5,7 @@ import Title from '../common/components/title/Title';
 import todoImg from './../assets/image/Todo-list.png'
 import SocialNetImg from '../assets/image/Social-network.png'
 import fleshCardImg from '../assets/image/FleshCardImg.png'
+import algoImg from '../assets/image/Algo.jpg'
 import {Zoom} from "react-awesome-reveal";
 
 const Projects = () => {
@@ -13,6 +14,9 @@ const Projects = () => {
     };
     const social = {
         backgroundImage: `url(${SocialNetImg})`,
+    };
+    const algo = {
+        backgroundImage: `url(${algoImg})`,
     };
     const fleshCard = {
         backgroundImage: `url(${fleshCardImg})`,
@@ -30,6 +34,10 @@ const Projects = () => {
                     <Zoom>
                         <Project  link={"https://alex62510.github.io/TaskList/"} title={"Todo list"} style={todos}
                                  description={"It's a list of tasks you need to complete or things that you want to do"}/>
+                    </Zoom>
+                    <Zoom>
+                        <Project  link={"https://courses-blond.vercel.app"} title={"AlgoExpert"} style={algo}
+                                  description={"The best resource for preparing for programming interviews. Everything you need in one optimized platform"}/>
                     </Zoom>
                     <Zoom>
                         <Project  link={"https://github.com/Alex62510/FlashCards_02_07"} title={"Flesh Cards"} style={fleshCard}

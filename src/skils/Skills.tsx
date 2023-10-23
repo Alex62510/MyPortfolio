@@ -8,6 +8,7 @@ import reduxImg from "../assets/image/redux.png";
 import cssImg from "../assets/image/css.png";
 import storyBookImg from "../assets/image/storybook.png";
 import gitImg from "../assets/image/git.png";
+import firebaseImg from "../assets/image/firebase.jpg";
 import restApiImg from "../assets/image/restApi.png";
 
 const Skills = () => {
@@ -28,6 +29,9 @@ const Skills = () => {
     };
     const storyBookImage = {
         backgroundImage: `url(${storyBookImg})`
+    };
+    const firebaseImage = {
+        backgroundImage: `url(${firebaseImg})`
     };
 
     return (
@@ -52,6 +56,9 @@ const Skills = () => {
                     </Fade>
                     <Fade direction={"up"}>
                         <Skill style={storyBookImage} title={"Story book"} descriiption={"60%"}/>
+                    </Fade>
+                    <Fade direction={"up"}>
+                        <Skill style={firebaseImage} title={"Firebase"} descriiption={"60%"}/>
                     </Fade>
                 </div>
             </div>
