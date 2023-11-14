@@ -5,7 +5,8 @@ import Title from '../common/components/title/Title';
 import todoImg from './../assets/image/Todo-list.png'
 import SocialNetImg from '../assets/image/Social-network.png'
 import fleshCardImg from '../assets/image/FleshCardImg.png'
-import algoImg from '../assets/image/Algo.jpg'
+import musicImg from '../assets/image/MusicImg.jpg'
+import algoImg from '../assets/image/AlgoImg.jpg'
 import {Zoom} from "react-awesome-reveal";
 
 const Projects = () => {
@@ -20,6 +21,9 @@ const Projects = () => {
     };
     const fleshCard = {
         backgroundImage: `url(${fleshCardImg})`,
+    };
+    const music = {
+        backgroundImage: `url(${musicImg})`,
     };
 
     return (
@@ -42,6 +46,10 @@ const Projects = () => {
                     <Zoom>
                         <Project  link={"https://github.com/Alex62510/FlashCards_02_07"} title={"Flesh Cards"} style={fleshCard}
                                   description={"This is a card bearing information on both sides, which is intended to be used as an aid in memorization"}/>
+                    </Zoom>
+                    <Zoom>
+                        <Project  link={"https://spontaneous-biscochitos-e84182.netlify.app"} title={"Music"} style={music}
+                                  description={"This is an application for listening to recorded tracks"}/>
                     </Zoom>
                 </div>
             </div>
