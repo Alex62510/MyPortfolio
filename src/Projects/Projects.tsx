@@ -7,6 +7,7 @@ import SocialNetImg from '../assets/image/Social-network.png'
 import fleshCardImg from '../assets/image/FleshCardImg.png'
 import musicImg from '../assets/image/MusicImg.jpg'
 import algoImg from '../assets/image/AlgoImg.jpg'
+import chatImg from '../assets/image/ChatImg.jpg'
 import {Zoom} from "react-awesome-reveal";
 
 const Projects = () => {
@@ -24,6 +25,9 @@ const Projects = () => {
     };
     const music = {
         backgroundImage: `url(${musicImg})`,
+    };
+    const chat = {
+        backgroundImage: `url(${chatImg})`,
     };
 
     return (
@@ -50,6 +54,10 @@ const Projects = () => {
                     <Zoom>
                         <Project  link={"https://spontaneous-biscochitos-e84182.netlify.app"} title={"Music"} style={music}
                                   description={"This is an application for listening to recorded tracks"}/>
+                    </Zoom>
+                    <Zoom>
+                        <Project  link={"https://aesthetic-sfogliatella-600f15.netlify.app/"} title={"Chat"} style={chat}
+                                  description={"This is an application for chatting"}/>
                     </Zoom>
                 </div>
             </div>
