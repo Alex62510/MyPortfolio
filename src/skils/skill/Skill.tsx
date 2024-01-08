@@ -8,12 +8,15 @@ type SkillPropsType ={
 }
 const Skill = (props:SkillPropsType) => {
     return (
-        <div className={style.skill}>
-            <div style={props.style} className={style.icon}></div>
+        <div className={style.container}>
+            <div className={style.skill}>
+                <div style={props.style} className={style.icon}></div>
 
-            <h3>{props.title}</h3>
-            <span className={style.description}>{props.descriiption}</span>
+                <h3>{props.title}</h3>
+                <span className={style.description}>{props.descriiption}</span>
+            </div>
         </div>
+
     );
 };
 

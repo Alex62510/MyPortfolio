@@ -61,6 +61,10 @@ const Skills = () => {
                         <Skill style={firebaseImage} title={"Firebase"} descriiption={"60%"}/>
                     </Fade>
                 </div>
+
+                <div className={style.animateContainer}>
+                    <span className={style.Span}></span>
+                </div>
             </div>
         </div>
     );

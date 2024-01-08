@@ -1,6 +1,6 @@
 import React from 'react';
 import style from './Title.module.scss'
-import {Bounce, Fade, Flip, Rotate, Slide, Zoom} from "react-awesome-reveal";
+import {Zoom} from "react-awesome-reveal";
 
 export type TitlePropsType={
     title:string

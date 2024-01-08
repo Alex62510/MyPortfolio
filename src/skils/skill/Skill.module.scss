@@ -15,16 +15,17 @@
   opacity: 0.8;
   filter: grayscale(0.4);
 
+
   &:hover {
     transform: scale(1.2, 1.2);
     transition: 0.3s ease-in;
     opacity: 1;
     filter: grayscale(0);
   }
+
   .icon {
     width: 150px;
     height: 150px;
-
     background-size: cover;
     background-position: center;
   }
