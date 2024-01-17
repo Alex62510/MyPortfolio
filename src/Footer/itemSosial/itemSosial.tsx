@@ -7,10 +7,15 @@ type Props = {
 }
 export const ItemSocial: FC<Props> = ({item, link}) => {
     return (
-        <div>
-            <a href={link}>
-                <div className={style.itemSocial} style={item}></div>
-            </a>
+        <div >
+            <div className={style.animateContainer}>
+                <div className={style.content}>
+                    <a href={link}>
+                        <div className={style.itemSocial} style={item}>
+                        </div>
+                    </a>
+                </div>
+            </div>
         </div>
     )
 }

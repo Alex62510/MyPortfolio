@@ -33,13 +33,13 @@ const Footer = () => {
                 <Title title={"Let's Work Together!"}/>
                 <div className={style.footerSocial}>
                     <Flip>
-                        {itemSocial.map((t, index) => <ItemSocial link={t.URL} item={t} key={index}/>)}
+                        {itemSocial.map((t, index) => <ItemSocial link={t.URL} item={t}
+                                                                  key={index}/>)}
                     </Flip>
                 </div>
                 <Bounce>
                     <span className={style.rights}>2023 All rights reserved</span>
                 </Bounce>
-
             </div>
         </div>
     );

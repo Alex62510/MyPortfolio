@@ -16,7 +16,60 @@
       display: flex;
       justify-content: space-around;
       align-items: flex-start;
+     &:hover{
+       .animateContainer {
+         width: 90px;
+         height: 90px;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         overflow: hidden;
+         position: relative;
+         border-radius: 20px;
 
+         .content {
+           background-color: #1e1e1e;
+           position: absolute;
+           top: 5px;
+           left: 5px;
+           width: calc(100% - 10px);
+           height: calc(100% - 10px);
+           z-index: 20;
+           border-radius: 16px;
+         }
+
+         &::before {
+           width: 500px;
+           height: 500px;
+           content: '';
+           position: absolute;
+           background-image: conic-gradient(transparent, transparent, transparent, #80ffdb);
+           animation: rotate 2s linear infinite;
+         }
+
+         &::after {
+           width: 500px;
+           height: 500px;
+           content: '';
+           position: absolute;
+           background-image: conic-gradient(transparent, transparent, transparent, #6930c3);
+           animation: rotate 2s linear infinite;
+           animation-delay: -1s;
+         }
+
+         @keyframes rotate {
+           from {
+             transform: rotate(0);
+           }
+           to {
+             transform: rotate(360deg);
+           }
+         }
+
+
+       }
+
+     }
       .itemSocial {
         @media screen and (max-width: 420px) {
           margin: 10px;
@@ -26,11 +79,63 @@
         height: 80px;
         background-size: contain;
         background-position: center;
-        border-radius: 5px;
+        border-radius: 16px;
+
       }
+
     }
   }
 }
 
-
+//.animateContainer {
+//  width: 90px;
+//  height: 90px;
+//  display: flex;
+//  justify-content: center;
+//  align-items: center;
+//  overflow: hidden;
+//  position: relative;
+//  border-radius: 20px;
+//
+//  .content {
+//    background-color: #1e1e1e;
+//    position: absolute;
+//    top: 5px;
+//    left: 5px;
+//    width: calc(100% - 10px);
+//    height: calc(100% - 10px);
+//    z-index: 20;
+//    border-radius: 16px;
+//  }
+//
+//  &::before {
+//    width: 500px;
+//    height: 500px;
+//    content: '';
+//    position: absolute;
+//    background-image: conic-gradient(transparent, transparent, transparent, #80ffdb);
+//    animation: rotate 2s linear infinite;
+//  }
+//
+//  &::after {
+//    width: 500px;
+//    height: 500px;
+//    content: '';
+//    position: absolute;
+//    background-image: conic-gradient(transparent, transparent, transparent, #6930c3);
+//    animation: rotate 2s linear infinite;
+//    animation-delay: -1s;
+//  }
+//
+//  @keyframes rotate {
+//    from {
+//      transform: rotate(0);
+//    }
+//    to {
+//      transform: rotate(360deg);
+//    }
+//  }
+//
+//
+//}
 
