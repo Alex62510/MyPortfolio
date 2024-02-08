@@ -8,6 +8,7 @@ import fleshCardImg from '../assets/image/FleshCardImg.png'
 import musicImg from '../assets/image/MusicImg.jpg'
 import algoImg from '../assets/image/AlgoImg.jpg'
 import chatImg from '../assets/image/ChatImg.jpg'
+import estateImg from '../assets/image/estateImg.jpg'
 import {Zoom} from "react-awesome-reveal";
 
 const Projects = () => {
@@ -28,6 +29,9 @@ const Projects = () => {
     };
     const chat = {
         backgroundImage: `url(${chatImg})`,
+    };
+    const estate = {
+        backgroundImage: `url(${estateImg})`,
     };
 
     return (
@@ -58,6 +62,10 @@ const Projects = () => {
                     <Zoom>
                         <Project  link={"https://aesthetic-sfogliatella-600f15.netlify.app/"} title={"Chat"} style={chat}
                                   description={"This is an application for chatting"}/>
+                    </Zoom>
+                    <Zoom>
+                        <Project  link={"https://alex-orlov-estate-app.onrender.com/"} title={"Estate App"} style={estate}
+                                  description={"This is a full-stack app for selling or renting an accommodation."}/>
                     </Zoom>
                 </div>
             </div>
