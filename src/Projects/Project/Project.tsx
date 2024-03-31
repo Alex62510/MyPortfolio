@@ -5,19 +5,22 @@ type JobPropsType = {
     title: string
     description: string
     style: {}
-    link:string
+    link: string
 }
 const Project = (props: JobPropsType) => {
     return (
         <div className={style.project}>
 
-                <div className={style.projectImg} style={props.style}>
-                    <div className={style.lookImg}>
-                        <a href={props.link} ><div className={style.link}>look</div></a>
-                    </div>
+            <div className={style.projectImg} style={props.style}>
+                <div className={style.lookImg}>
+                    <a href={props.link} target={'_blank'}
+                       rel={'noopener noreferrer'} style={{textDecoration:"none"}}>
+                        <div className={style.link}>look</div>
+                    </a>
                 </div>
-                <h6 className={style.projectTitle}>{props.title}</h6>
-                <span className={style.description}>{props.description}</span>
+            </div>
+            <h6 className={style.projectTitle}>{props.title}</h6>
+            <span className={style.description}>{props.description}</span>
 
         </div>
     );

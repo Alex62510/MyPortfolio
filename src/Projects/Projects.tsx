@@ -9,6 +9,7 @@ import musicImg from '../assets/image/MusicImg.jpg'
 import algoImg from '../assets/image/AlgoImg.jpg'
 import chatImg from '../assets/image/ChatImg.jpg'
 import estateImg from '../assets/image/estateImg.jpg'
+import blogImg from '../assets/image/blogImg.jpg'
 import {Zoom} from "react-awesome-reveal";
 
 const Projects = () => {
@@ -32,6 +33,9 @@ const Projects = () => {
     };
     const estate = {
         backgroundImage: `url(${estateImg})`,
+    };
+    const blog = {
+        backgroundImage: `url(${blogImg})`,
     };
 
     return (
@@ -65,7 +69,11 @@ const Projects = () => {
                     </Zoom>
                     <Zoom>
                         <Project  link={"https://alex-orlov-estate-app.onrender.com/"} title={"Estate App"} style={estate}
-                                  description={"This is a full-stack app for selling or renting an accommodation."}/>
+                                  description={"This is a full-stack application for selling or renting an accommodation."}/>
+                    </Zoom>
+                    <Zoom>
+                        <Project  link={"https://blog-fullstack-v4zf.onrender.com/"} title={"Blog App"} style={blog}
+                                  description={"This is a full-stack application for creating a personal blog."}/>
                     </Zoom>
                 </div>
             </div>
