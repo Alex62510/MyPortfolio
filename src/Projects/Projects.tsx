@@ -12,7 +12,12 @@ import estateImg from '../assets/image/estateImg.jpg'
 import blogImg from '../assets/image/blogImg.jpg'
 import {Zoom} from "react-awesome-reveal";
 
-const Projects = () => {
+
+type Props = {
+    blogLoading: boolean
+    estateLoading: boolean
+}
+const Projects = ({blogLoading, estateLoading}: Props) => {
     const todos = {
         backgroundImage: `url(${todoImg})`,
     };
@@ -44,36 +49,46 @@ const Projects = () => {
                 <Title title="Projects"/>
                 <div className={style.projects}>
                     <Zoom>`
-                        <Project link={"https://Alex62510.github.io/samurai-way-main"} title={"Social network"} style={social}
+                        <Project link={"https://Alex62510.github.io/samurai-way-main"}
+                                 title={"Social network"} style={social}
                                  description={"Social networks are websites and apps that allow users and organizations to connect, communicate, share information and form relationships"}/>
                     </Zoom>
                     <Zoom>
-                        <Project  link={"https://alex62510.github.io/TaskList/"} title={"Todo list"} style={todos}
+                        <Project link={"https://alex62510.github.io/TaskList/"}
+                                 title={"Todo list"} style={todos}
                                  description={"It's a list of tasks you need to complete or things that you want to do"}/>
                     </Zoom>
                     <Zoom>
-                        <Project  link={"https://courses-blond.vercel.app"} title={"AlgoExpert"} style={algo}
-                                  description={"The best resource for preparing for programming interviews. Everything you need in one optimized platform"}/>
+                        <Project link={"https://courses-blond.vercel.app"}
+                                 title={"AlgoExpert"} style={algo}
+                                 description={"The best resource for preparing for programming interviews. Everything you need in one optimized platform"}/>
                     </Zoom>
                     <Zoom>
-                        <Project  link={"https://github.com/Alex62510/FlashCards_02_07"} title={"Flesh Cards"} style={fleshCard}
-                                  description={"This is a card bearing information on both sides, which is intended to be used as an aid in memorization"}/>
+                        <Project link={"https://github.com/Alex62510/FlashCards_02_07"}
+                                 title={"Flesh Cards"} style={fleshCard}
+                                 description={"This is a card bearing information on both sides, which is intended to be used as an aid in memorization"}/>
                     </Zoom>
                     <Zoom>
-                        <Project  link={"https://spontaneous-biscochitos-e84182.netlify.app"} title={"Music"} style={music}
-                                  description={"This is an application for listening to recorded tracks"}/>
+                        <Project
+                            link={"https://spontaneous-biscochitos-e84182.netlify.app"}
+                            title={"Music"} style={music}
+                            description={"This is an application for listening to recorded tracks"}/>
                     </Zoom>
                     <Zoom>
-                        <Project  link={"https://aesthetic-sfogliatella-600f15.netlify.app/"} title={"Chat"} style={chat}
-                                  description={"This is an application for chatting"}/>
+                        <Project
+                            link={"https://aesthetic-sfogliatella-600f15.netlify.app/"}
+                            title={"Chat"} style={chat}
+                            description={"This is an application for chatting"}/>
                     </Zoom>
                     <Zoom>
-                        <Project  link={"https://alex-orlov-estate-app.onrender.com/"} title={"Estate App"} style={estate}
-                                  description={"This is a full-stack application for selling or renting an accommodation."}/>
+                        <Project link={"https://alex-orlov-estate-app.onrender.com/"}
+                                 title={"Estate App"} style={estate} loading={estateLoading}
+                                 description={"This is a full-stack application for selling or renting an accommodation."}/>
                     </Zoom>
                     <Zoom>
-                        <Project  link={"https://blog-fullstack-v4zf.onrender.com/"} title={"Blog App"} style={blog}
-                                  description={"This is a full-stack application for creating a personal blog."}/>
+                        <Project link={"https://blog-fullstack-v4zf.onrender.com/"}
+                                 title={"Blog App"} style={blog} loading={blogLoading}
+                                 description={"This is a full-stack application for creating a personal blog."}/>
                     </Zoom>
                 </div>
             </div>
