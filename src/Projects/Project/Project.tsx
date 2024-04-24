@@ -1,6 +1,7 @@
 import React from 'react';
 import style from './Project.module.scss';
 
+
 type JobPropsType = {
     title: string
     description: string
@@ -12,7 +13,11 @@ const Project = (props: JobPropsType) => {
     return (
         <div className={style.project}>
             {props.loading?(
-                <div>{'Loading'}</div>
+                <div className={style.posCenter}>
+                    <span>Please wait... </span>
+                    <Spinner/>
+                </div>
+
             ): (<div className={style.projectImg} style={props.style}>
                 <div className={style.lookImg}>
                     <a href={props.link} target={'_blank'}
@@ -28,5 +33,9 @@ const Project = (props: JobPropsType) => {
         </div>
     );
 };
+
+export const Spinner = () => <div className={style.loader}></div>;
+
+
 
 export default Project;
