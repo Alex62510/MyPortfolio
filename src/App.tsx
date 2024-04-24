@@ -17,7 +17,7 @@ function App() {
         const getBlogApp = async () => {
             setBlogLoading(true);
             try {
-                const res = await fetch('https://blog-fullstack-v4zf.onrender.com/');
+                const res = await fetch('https://blog-fullstack-v4zf.onrender.com/',{mode:"no-cors"});
                 const data = await res.json();
                 if (res.ok) {
                     setBlogLoading(false);
@@ -33,7 +33,7 @@ function App() {
         const getEstateApp = async () => {
             setEstateLoading(true);
             try {
-                const res = await fetch('https://alex-orlov-estate-app.onrender.com/');
+                const res = await fetch('https://alex-orlov-estate-app.onrender.com/',{mode:"no-cors"});
                 const data = await res.json();
                 if (res.ok) {
                     setEstateLoading(false);
